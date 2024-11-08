@@ -35,9 +35,9 @@ class Ui_Dialog(object):
         self.big = QtWidgets.QRadioButton(parent=self.gridLayoutWidget)
         self.big.setObjectName("big")
         self.gridLayout.addWidget(self.big, 1, 1, 1, 1)
-        self.change_2 = QtWidgets.QRadioButton(parent=self.gridLayoutWidget)
-        self.change_2.setObjectName("change_2")
-        self.gridLayout.addWidget(self.change_2, 2, 1, 1, 1)
+        self.reverse = QtWidgets.QRadioButton(parent=self.gridLayoutWidget)
+        self.reverse.setObjectName("reverse")
+        self.gridLayout.addWidget(self.reverse, 2, 1, 1, 1)
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -48,4 +48,4 @@ class Ui_Dialog(object):
         self.small.setText(_translate("Dialog", "Małe"))
         self.change.setText(_translate("Dialog", "Zmień"))
         self.big.setText(_translate("Dialog", "Durze"))
-        self.change_2.setText(_translate("Dialog", "Zmień"))
+        self.reverse.setText(_translate("Dialog", "Zmień"))

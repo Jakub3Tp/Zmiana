@@ -12,15 +12,20 @@ class MyForm(QDialog):
         super().__init__()
         self.ui = Ui_Dialog()
         self.ui.setupUi(self)
+        self.ui.change.clicked.connect(self.button_clicked)
         self.show()
 
-    def durze(self):
+    def button_clicked(self):
         if self.ui.big.isChecked():
-            self.ui.edit.text.lower
-    def male(self):
-        if self.ui.small.isChecked():
-            self.ui.edit.
+            self.ui.edit.setText(self.ui.edit.text().upper())
 
+        if self.ui.reverse.isChecked():
+            self.ui.edit.setText(self.ui.edit.text()[::-1])
+
+        if self.ui.small.isChecked():
+            self.ui.edit.setText(self.ui.edit.text().lower())
+
+        self.ui.result.setText(self.ui.edit.text())
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
