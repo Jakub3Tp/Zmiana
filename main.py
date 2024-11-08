@@ -12,7 +12,8 @@ class MyForm(QDialog):
         super().__init__()
         self.ui = Ui_Dialog()
         self.ui.setupUi(self)
-        self.ui.change.clicked.connect(self.button_clicked)
+        #self.ui.change.clicked.connect(self.button_clicked)
+        self.ui.edit.textChanged.connect(self.button_clicked)
         self.show()
 
     def button_clicked(self):
