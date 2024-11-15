@@ -21,7 +21,7 @@ class MyForm(QDialog):
             self.ui.edit.setText(self.ui.edit.text().upper())
 
         if self.ui.reverse.isChecked():
-            self.ui.edit.setText(self.ui.edit.text()[::-1])
+            self.ui.edit.setText(self.ui.edit.text().swapcase())
 
         if self.ui.small.isChecked():
             self.ui.edit.setText(self.ui.edit.text().lower())
